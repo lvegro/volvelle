@@ -1,0 +1,501 @@
+segment,sub_segment,counterparty,nominal_exposure,pd,lgd,status,entity_id
+Sovereign,Large Cap,CP_0007,3721000,0.0375,0.26,performing,E140
+Corporate,Micro,CP_0109,207000,0.015,0.29,performing,E144
+Corporate,Micro,CP_0167,3522000,0.0635,0.38,performing,E2
+Corporate,Micro,CP_0109,1734000,0.0242,0.58,performing,E24
+Retail,Large Cap,CP_0092,4245000,0.091,0.52,performing,E138
+Corporate,SME,CP_0021,2783000,0.1246,0.45,watch,E148
+Corporate,Micro,CP_0018,277000,0.035,0.32,performing,E60
+Corporate,SME,CP_0072,2294000,0.1253,0.27,performing,E69
+Sovereign,Micro,CP_0166,403000,0.0956,0.41,performing,E119
+Retail,SME,CP_0164,3456000,0.0337,0.33,watch,E15
+Corporate,Large Cap,CP_0081,2036000,0.0109,0.57,performing,E81
+Corporate,Micro,CP_0128,2008000,0.1373,0.38,performing,E64
+Sovereign,Micro,CP_0138,1351000,0.0881,0.56,performing,E57
+Corporate,Micro,CP_0127,500000,0.008,0.24,performing,E109
+Sovereign,Large Cap,CP_0099,1939000,0.1494,0.41,non_performing,E3
+Sovereign,Micro,CP_0030,3424000,0.081,0.31,performing,E29
+Retail,SME,CP_0041,2296000,0.1431,0.55,performing,E129
+Corporate,Micro,CP_0028,4359000,0.0455,0.46,performing,E40
+Retail,Large Cap,CP_0139,4770000,0.1384,0.57,performing,E126
+Corporate,Large Cap,CP_0093,4400000,0.1249,0.32,performing,E146
+Corporate,Large Cap,CP_0188,2456000,0.0113,0.5,watch,E33
+Sovereign,SME,CP_0141,867000,0.0796,0.44,non_performing,E139
+Sovereign,Micro,CP_0052,3579000,0.0604,0.47,performing,E133
+Retail,Large Cap,CP_0064,1162000,0.0514,0.44,performing,E57
+Corporate,Large Cap,CP_0182,3174000,0.0351,0.56,watch,E19
+Sovereign,Large Cap,CP_0072,3361000,0.0329,0.25,non_performing,E147
+Sovereign,SME,CP_0063,3934000,0.1213,0.28,performing,E111
+Retail,SME,CP_0106,2362000,0.1096,0.47,non_performing,E26
+Corporate,SME,CP_0187,1730000,0.1294,0.3,performing,E115
+Corporate,SME,CP_0047,1429000,0.0382,0.57,performing,E141
+Corporate,Large Cap,CP_0167,4996000,0.1256,0.59,non_performing,E61
+Corporate,SME,CP_0125,2433000,0.1298,0.56,performing,E1
+Retail,SME,CP_0117,1462000,0.1048,0.49,watch,E125
+Corporate,Large Cap,CP_0076,1128000,0.0097,0.49,performing,E81
+Corporate,Large Cap,CP_0150,2410000,0.138,0.41,performing,E131
+Corporate,Large Cap,CP_0018,2995000,0.1016,0.29,performing,E146
+Corporate,Micro,CP_0153,247000,0.0132,0.46,performing,E81
+Retail,Large Cap,CP_0172,3595000,0.0366,0.36,performing,E77
+Retail,SME,CP_0193,4682000,0.0024,0.45,performing,E26
+Corporate,Micro,CP_0055,2554000,0.0207,0.34,performing,E63
+Retail,SME,CP_0041,2219000,0.0819,0.32,non_performing,E136
+Corporate,Micro,CP_0142,1532000,0.0998,0.58,performing,E30
+Corporate,Micro,CP_0142,819000,0.043,0.28,performing,E68
+Sovereign,SME,CP_0065,4531000,0.1271,0.24,performing,E71
+Corporate,Large Cap,CP_0086,3867000,0.0959,0.3,performing,E142
+Sovereign,SME,CP_0144,98000,0.0122,0.55,non_performing,E140
+Corporate,SME,CP_0150,2785000,0.065,0.22,performing,E11
+Retail,Large Cap,CP_0175,1285000,0.0163,0.51,watch,E105
+Sovereign,Micro,CP_0040,4633000,0.0363,0.27,watch,E46
+Retail,Large Cap,CP_0046,3696000,0.0505,0.57,watch,E64
+Retail,Large Cap,CP_0180,585000,0.131,0.54,performing,E118
+Retail,SME,CP_0059,1153000,0.0993,0.36,performing,E18
+Retail,SME,CP_0165,2572000,0.1022,0.54,performing,E8
+Corporate,SME,CP_0046,2924000,0.1475,0.22,performing,E89
+Sovereign,SME,CP_0112,3051000,0.0772,0.35,performing,E66
+Corporate,Micro,CP_0112,58000,0.1389,0.42,performing,E51
+Retail,SME,CP_0018,4747000,0.1382,0.45,performing,E32
+Sovereign,SME,CP_0130,1581000,0.0619,0.36,performing,E33
+Corporate,SME,CP_0171,4705000,0.1019,0.56,performing,E78
+Retail,Micro,CP_0001,1554000,0.0323,0.51,performing,E83
+Retail,SME,CP_0114,3394000,0.0772,0.52,non_performing,E44
+Sovereign,Large Cap,CP_0073,2601000,0.0953,0.33,watch,E61
+Sovereign,SME,CP_0058,4042000,0.023,0.22,non_performing,E19
+Retail,SME,CP_0162,2900000,0.108,0.35,performing,E38
+Sovereign,Micro,CP_0002,4469000,0.1292,0.55,watch,E57
+Corporate,Micro,CP_0133,2350000,0.0841,0.57,performing,E35
+Retail,Micro,CP_0136,4940000,0.0897,0.58,watch,E130
+Retail,Micro,CP_0115,4491000,0.1118,0.39,performing,E64
+Sovereign,SME,CP_0197,3899000,0.0732,0.3,performing,E74
+Corporate,SME,CP_0086,1633000,0.0815,0.26,performing,E40
+Sovereign,Large Cap,CP_0017,2104000,0.0503,0.39,performing,E108
+Retail,Micro,CP_0179,147000,0.1322,0.43,performing,E91
+Retail,SME,CP_0108,2714000,0.1105,0.52,watch,E125
+Corporate,SME,CP_0112,2454000,0.0589,0.47,watch,E43
+Retail,Large Cap,CP_0160,2694000,0.1361,0.44,performing,E22
+Sovereign,SME,CP_0035,4341000,0.0281,0.3,performing,E117
+Retail,SME,CP_0195,4404000,0.0425,0.58,performing,E21
+Retail,Large Cap,CP_0192,2720000,0.15,0.34,performing,E11
+Corporate,Large Cap,CP_0052,4204000,0.0936,0.3,performing,E30
+Sovereign,Large Cap,CP_0120,3512000,0.1153,0.27,performing,E30
+Corporate,SME,CP_0028,2914000,0.1394,0.43,non_performing,E97
+Retail,Micro,CP_0051,426000,0.1039,0.45,performing,E78
+Sovereign,Micro,CP_0031,3991000,0.0853,0.22,performing,E95
+Corporate,Micro,CP_0166,1739000,0.1276,0.53,performing,E93
+Sovereign,SME,CP_0182,807000,0.0272,0.41,performing,E138
+Retail,SME,CP_0112,4137000,0.0893,0.33,performing,E23
+Retail,SME,CP_0063,3765000,0.0859,0.47,performing,E127
+Retail,Large Cap,CP_0125,1100000,0.1199,0.34,watch,E71
+Sovereign,Large Cap,CP_0133,4743000,0.0138,0.49,performing,E62
+Sovereign,SME,CP_0166,3574000,0.0678,0.21,performing,E104
+Sovereign,Large Cap,CP_0079,3337000,0.056,0.42,performing,E141
+Retail,SME,CP_0180,2296000,0.0467,0.29,performing,E81
+Corporate,Micro,CP_0138,4757000,0.1038,0.28,performing,E71
+Sovereign,Micro,CP_0195,2647000,0.0432,0.24,performing,E59
+Retail,Large Cap,CP_0078,120000,0.0806,0.31,non_performing,E142
+Retail,Micro,CP_0033,3207000,0.1132,0.24,performing,E73
+Retail,SME,CP_0113,1736000,0.1449,0.3,watch,E30
+Corporate,SME,CP_0126,417000,0.0948,0.22,performing,E145
+Retail,Large Cap,CP_0064,636000,0.1149,0.44,watch,E58
+Sovereign,SME,CP_0116,4547000,0.0453,0.44,performing,E146
+Sovereign,Large Cap,CP_0157,4803000,0.0158,0.51,performing,E68
+Sovereign,Large Cap,CP_0041,1237000,0.0832,0.26,performing,E121
+Retail,Large Cap,CP_0060,1476000,0.0431,0.54,performing,E60
+Retail,Micro,CP_0151,3323000,0.1401,0.37,performing,E39
+Retail,Large Cap,CP_0019,345000,0.1191,0.44,watch,E74
+Retail,Large Cap,CP_0120,3459000,0.1053,0.58,performing,E127
+Retail,Large Cap,CP_0154,247000,0.0654,0.33,performing,E24
+Corporate,Micro,CP_0148,2956000,0.0041,0.51,watch,E148
+Corporate,Large Cap,CP_0121,2619000,0.0669,0.31,non_performing,E112
+Sovereign,SME,CP_0024,2377000,0.0618,0.33,performing,E42
+Retail,SME,CP_0178,2503000,0.0997,0.36,watch,E10
+Retail,Large Cap,CP_0081,1299000,0.0183,0.51,watch,E1
+Sovereign,Micro,CP_0119,2096000,0.0289,0.34,watch,E114
+Corporate,Large Cap,CP_0069,2769000,0.1392,0.38,performing,E32
+Corporate,Micro,CP_0156,4007000,0.1068,0.32,performing,E105
+Corporate,Large Cap,CP_0030,2334000,0.0185,0.53,performing,E75
+Sovereign,Micro,CP_0070,2107000,0.0729,0.39,performing,E38
+Retail,Large Cap,CP_0154,2566000,0.132,0.55,performing,E107
+Retail,Micro,CP_0069,4112000,0.0431,0.32,performing,E126
+Corporate,SME,CP_0138,2447000,0.0505,0.51,performing,E83
+Corporate,Micro,CP_0062,2880000,0.0358,0.51,performing,E122
+Sovereign,SME,CP_0099,4943000,0.1191,0.46,performing,E10
+Corporate,Micro,CP_0152,1693000,0.016,0.54,performing,E117
+Corporate,Micro,CP_0037,2079000,0.0986,0.26,performing,E68
+Retail,Micro,CP_0178,2018000,0.013,0.33,performing,E137
+Retail,SME,CP_0161,3608000,0.1142,0.55,performing,E18
+Corporate,Micro,CP_0176,4609000,0.1496,0.5,performing,E26
+Sovereign,Micro,CP_0026,2246000,0.1044,0.56,performing,E15
+Retail,SME,CP_0096,2182000,0.0374,0.36,performing,E47
+Corporate,Large Cap,CP_0021,3067000,0.058,0.47,performing,E150
+Corporate,Large Cap,CP_0119,3208000,0.0695,0.47,watch,E120
+Retail,Micro,CP_0140,832000,0.0668,0.34,performing,E109
+Sovereign,SME,CP_0117,4234000,0.0307,0.35,performing,E61
+Retail,Micro,CP_0092,2895000,0.1489,0.32,non_performing,E102
+Retail,Large Cap,CP_0145,4332000,0.117,0.59,non_performing,E128
+Retail,Large Cap,CP_0156,4020000,0.0336,0.28,performing,E36
+Sovereign,Large Cap,CP_0161,3249000,0.047,0.38,performing,E34
+Corporate,SME,CP_0084,3750000,0.0272,0.25,performing,E94
+Sovereign,Micro,CP_0070,4161000,0.0393,0.53,performing,E76
+Sovereign,SME,CP_0030,2368000,0.0122,0.5,performing,E102
+Sovereign,SME,CP_0024,3964000,0.0031,0.41,performing,E68
+Sovereign,SME,CP_0164,4704000,0.0171,0.29,performing,E144
+Retail,Micro,CP_0057,3256000,0.0957,0.39,performing,E105
+Corporate,Large Cap,CP_0012,4734000,0.0464,0.4,performing,E138
+Corporate,SME,CP_0117,1887000,0.1425,0.48,performing,E40
+Retail,Micro,CP_0026,4177000,0.0927,0.58,performing,E95
+Corporate,SME,CP_0114,4755000,0.1285,0.24,performing,E140
+Sovereign,SME,CP_0016,2021000,0.0293,0.25,watch,E117
+Corporate,Micro,CP_0055,3226000,0.09,0.21,watch,E63
+Corporate,Micro,CP_0053,390000,0.115,0.28,performing,E60
+Retail,Large Cap,CP_0153,64000,0.1289,0.26,performing,E65
+Corporate,Large Cap,CP_0170,4339000,0.0206,0.34,watch,E83
+Corporate,Large Cap,CP_0068,309000,0.1115,0.41,performing,E122
+Retail,SME,CP_0132,2989000,0.0683,0.29,performing,E134
+Retail,SME,CP_0165,4822000,0.0101,0.39,performing,E28
+Retail,Micro,CP_0114,414000,0.013,0.44,performing,E71
+Sovereign,Micro,CP_0150,2764000,0.0495,0.6,performing,E117
+Sovereign,Micro,CP_0111,541000,0.1056,0.54,performing,E142
+Sovereign,Large Cap,CP_0111,2285000,0.035,0.34,performing,E107
+Sovereign,Large Cap,CP_0081,2162000,0.1001,0.35,performing,E122
+Corporate,Large Cap,CP_0022,511000,0.0154,0.5,watch,E143
+Corporate,Micro,CP_0144,2830000,0.1008,0.36,watch,E109
+Sovereign,Large Cap,CP_0074,3022000,0.0534,0.43,performing,E124
+Corporate,Large Cap,CP_0090,4235000,0.0558,0.51,performing,E110
+Sovereign,Micro,CP_0158,3391000,0.084,0.44,performing,E69
+Corporate,Large Cap,CP_0070,3528000,0.047,0.34,performing,E37
+Sovereign,Micro,CP_0103,394000,0.1114,0.59,performing,E136
+Corporate,SME,CP_0108,2296000,0.0245,0.32,performing,E146
+Sovereign,Large Cap,CP_0014,820000,0.1134,0.22,performing,E114
+Sovereign,SME,CP_0125,3055000,0.0627,0.29,performing,E89
+Retail,Large Cap,CP_0073,3407000,0.0894,0.41,performing,E57
+Retail,Micro,CP_0015,88000,0.0459,0.28,performing,E66
+Retail,SME,CP_0031,88000,0.1123,0.27,performing,E59
+Sovereign,Micro,CP_0172,4041000,0.0117,0.54,performing,E5
+Retail,Large Cap,CP_0081,2900000,0.0864,0.48,performing,E30
+Retail,Large Cap,CP_0084,901000,0.1422,0.38,performing,E93
+Corporate,SME,CP_0028,1254000,0.0887,0.41,performing,E80
+Sovereign,SME,CP_0057,1699000,0.0261,0.4,performing,E131
+Corporate,SME,CP_0090,3651000,0.123,0.53,performing,E38
+Retail,Large Cap,CP_0045,3032000,0.1143,0.46,performing,E127
+Retail,Micro,CP_0195,2918000,0.1025,0.55,performing,E83
+Sovereign,SME,CP_0039,2227000,0.0709,0.45,watch,E15
+Retail,Micro,CP_0019,1587000,0.0683,0.22,watch,E20
+Sovereign,Large Cap,CP_0158,2991000,0.0583,0.43,non_performing,E11
+Retail,Micro,CP_0167,982000,0.0911,0.4,non_performing,E116
+Corporate,SME,CP_0183,467000,0.0973,0.22,performing,E113
+Sovereign,Micro,CP_0157,836000,0.0566,0.31,performing,E87
+Sovereign,Micro,CP_0014,3957000,0.0974,0.23,performing,E99
+Retail,SME,CP_0186,4265000,0.1447,0.44,performing,E21
+Sovereign,Micro,CP_0037,4588000,0.0472,0.46,performing,E34
+Sovereign,Micro,CP_0022,1582000,0.0571,0.52,watch,E135
+Corporate,Micro,CP_0172,2146000,0.0549,0.35,performing,E55
+Retail,SME,CP_0050,1171000,0.0215,0.23,watch,E26
+Sovereign,Micro,CP_0190,4424000,0.0066,0.33,watch,E34
+Sovereign,SME,CP_0040,853000,0.1249,0.51,watch,E43
+Sovereign,SME,CP_0012,2084000,0.1018,0.3,performing,E73
+Sovereign,SME,CP_0060,2693000,0.0471,0.52,performing,E50
+Retail,Micro,CP_0147,4923000,0.0698,0.31,performing,E136
+Retail,Large Cap,CP_0052,4016000,0.0216,0.3,performing,E96
+Sovereign,Large Cap,CP_0183,4237000,0.1278,0.31,watch,E70
+Retail,Micro,CP_0038,4164000,0.0147,0.56,watch,E90
+Corporate,SME,CP_0014,2012000,0.0567,0.35,performing,E58
+Corporate,SME,CP_0026,4204000,0.0978,0.52,performing,E74
+Retail,Micro,CP_0036,3806000,0.0709,0.45,non_performing,E5
+Retail,Large Cap,CP_0039,2767000,0.1094,0.41,performing,E74
+Corporate,SME,CP_0032,286000,0.0636,0.52,performing,E29
+Retail,Micro,CP_0138,131000,0.0778,0.3,performing,E110
+Corporate,Micro,CP_0091,1241000,0.0631,0.47,performing,E93
+Corporate,Micro,CP_0140,2561000,0.1483,0.42,performing,E121
+Corporate,Micro,CP_0100,4906000,0.0388,0.21,watch,E89
+Corporate,Micro,CP_0169,3160000,0.116,0.49,performing,E12
+Retail,Micro,CP_0087,4077000,0.0271,0.51,performing,E123
+Sovereign,Large Cap,CP_0035,362000,0.1167,0.38,performing,E12
+Corporate,Large Cap,CP_0081,4670000,0.0778,0.6,performing,E65
+Corporate,Micro,CP_0049,1466000,0.1295,0.22,performing,E70
+Corporate,SME,CP_0112,4453000,0.1118,0.56,performing,E48
+Retail,Micro,CP_0128,1868000,0.1198,0.31,performing,E109
+Corporate,SME,CP_0155,4976000,0.0279,0.32,performing,E84
+Sovereign,SME,CP_0079,2257000,0.1079,0.27,performing,E115
+Corporate,Micro,CP_0091,3094000,0.0658,0.46,watch,E15
+Corporate,Micro,CP_0164,2061000,0.0774,0.5,performing,E8
+Corporate,Micro,CP_0174,3917000,0.0062,0.23,watch,E94
+Retail,SME,CP_0146,210000,0.0239,0.38,performing,E114
+Corporate,Micro,CP_0036,2671000,0.0603,0.46,performing,E30
+Corporate,Micro,CP_0048,2520000,0.0587,0.42,performing,E67
+Sovereign,SME,CP_0055,4982000,0.0436,0.57,performing,E32
+Corporate,Large Cap,CP_0116,905000,0.1073,0.6,watch,E82
+Sovereign,SME,CP_0182,371000,0.0818,0.56,watch,E45
+Retail,Micro,CP_0058,651000,0.0309,0.26,watch,E7
+Retail,Micro,CP_0147,1876000,0.1207,0.42,performing,E23
+Corporate,SME,CP_0102,4998000,0.1081,0.41,watch,E148
+Corporate,Large Cap,CP_0082,3230000,0.068,0.47,performing,E142
+Sovereign,Micro,CP_0047,3851000,0.0202,0.4,watch,E32
+Sovereign,Large Cap,CP_0078,865000,0.0491,0.48,performing,E133
+Retail,Large Cap,CP_0065,1022000,0.1435,0.31,performing,E137
+Corporate,Micro,CP_0165,885000,0.1413,0.26,performing,E87
+Sovereign,Large Cap,CP_0008,452000,0.1423,0.51,performing,E54
+Sovereign,SME,CP_0159,3213000,0.0752,0.45,performing,E78
+Retail,Large Cap,CP_0176,2060000,0.0686,0.48,performing,E107
+Retail,SME,CP_0053,1734000,0.0224,0.54,performing,E89
+Retail,Large Cap,CP_0195,1884000,0.0847,0.33,performing,E69
+Retail,Large Cap,CP_0037,529000,0.0442,0.35,performing,E64
+Corporate,SME,CP_0148,3620000,0.0293,0.26,non_performing,E120
+Retail,SME,CP_0128,165000,0.1418,0.4,non_performing,E56
+Sovereign,SME,CP_0013,300000,0.0747,0.55,performing,E121
+Retail,Micro,CP_0003,4244000,0.0652,0.55,performing,E104
+Retail,Large Cap,CP_0103,303000,0.0847,0.35,performing,E99
+Sovereign,SME,CP_0196,2772000,0.124,0.45,performing,E33
+Corporate,SME,CP_0096,3985000,0.0515,0.58,watch,E51
+Sovereign,Micro,CP_0103,2525000,0.0078,0.25,performing,E122
+Sovereign,SME,CP_0039,3051000,0.0778,0.33,performing,E42
+Retail,Micro,CP_0190,4221000,0.0895,0.4,performing,E126
+Sovereign,Micro,CP_0077,2401000,0.0035,0.33,performing,E107
+Sovereign,SME,CP_0186,4367000,0.0948,0.44,performing,E149
+Sovereign,Large Cap,CP_0185,304000,0.0726,0.41,performing,E98
+Corporate,Micro,CP_0063,206000,0.1423,0.24,performing,E81
+Retail,Large Cap,CP_0106,3468000,0.0621,0.51,non_performing,E16
+Sovereign,Large Cap,CP_0133,1076000,0.0494,0.46,performing,E81
+Corporate,SME,CP_0137,1745000,0.0538,0.51,performing,E68
+Sovereign,SME,CP_0050,4789000,0.0426,0.32,non_performing,E77
+Retail,Micro,CP_0054,3467000,0.0739,0.39,performing,E71
+Retail,Large Cap,CP_0147,3399000,0.0576,0.59,watch,E38
+Retail,Large Cap,CP_0074,4779000,0.0128,0.57,performing,E123
+Corporate,Large Cap,CP_0138,1392000,0.0847,0.31,performing,E62
+Corporate,Large Cap,CP_0172,4531000,0.0346,0.29,performing,E85
+Sovereign,SME,CP_0026,3422000,0.0215,0.59,non_performing,E41
+Retail,Micro,CP_0122,2413000,0.0307,0.59,performing,E16
+Corporate,Micro,CP_0147,1199000,0.1111,0.54,performing,E45
+Retail,Large Cap,CP_0010,4986000,0.0602,0.4,non_performing,E75
+Corporate,Large Cap,CP_0077,2861000,0.017,0.59,performing,E140
+Sovereign,SME,CP_0035,4263000,0.0707,0.28,performing,E42
+Sovereign,SME,CP_0166,1323000,0.0287,0.49,watch,E146
+Sovereign,Large Cap,CP_0045,3074000,0.0962,0.36,performing,E84
+Corporate,SME,CP_0172,522000,0.1473,0.39,non_performing,E2
+Retail,SME,CP_0061,2261000,0.0408,0.33,performing,E147
+Corporate,SME,CP_0168,1830000,0.0362,0.47,performing,E41
+Retail,Micro,CP_0129,4619000,0.1333,0.51,performing,E76
+Retail,Micro,CP_0057,1135000,0.0209,0.26,performing,E96
+Retail,Micro,CP_0141,4568000,0.1138,0.52,watch,E64
+Sovereign,Micro,CP_0021,2651000,0.0797,0.34,non_performing,E29
+Corporate,Micro,CP_0130,1051000,0.081,0.27,watch,E114
+Corporate,Micro,CP_0053,3599000,0.0738,0.56,performing,E15
+Retail,Large Cap,CP_0132,2106000,0.085,0.42,performing,E79
+Sovereign,Large Cap,CP_0102,1310000,0.0014,0.29,performing,E109
+Retail,Micro,CP_0017,2729000,0.01,0.56,non_performing,E121
+Corporate,SME,CP_0105,941000,0.0212,0.46,performing,E108
+Retail,SME,CP_0115,4355000,0.1361,0.35,performing,E139
+Corporate,Micro,CP_0090,637000,0.1489,0.36,performing,E58
+Corporate,Large Cap,CP_0077,2342000,0.1081,0.37,performing,E59
+Corporate,SME,CP_0089,818000,0.0291,0.55,watch,E9
+Sovereign,SME,CP_0158,3842000,0.1327,0.21,performing,E26
+Sovereign,Large Cap,CP_0115,3009000,0.1058,0.22,performing,E103
+Retail,Large Cap,CP_0139,1125000,0.1297,0.22,performing,E75
+Corporate,Micro,CP_0148,1629000,0.0901,0.47,performing,E78
+Corporate,Micro,CP_0134,1144000,0.0458,0.22,non_performing,E45
+Sovereign,Micro,CP_0110,2801000,0.008,0.34,performing,E98
+Sovereign,SME,CP_0179,2111000,0.0232,0.35,watch,E122
+Corporate,Large Cap,CP_0077,4295000,0.0225,0.39,performing,E106
+Retail,Micro,CP_0136,714000,0.0372,0.28,performing,E116
+Retail,Large Cap,CP_0138,3637000,0.0294,0.31,performing,E11
+Corporate,Large Cap,CP_0195,2959000,0.101,0.29,performing,E86
+Retail,Large Cap,CP_0055,4689000,0.1443,0.25,non_performing,E123
+Corporate,Micro,CP_0155,3534000,0.0601,0.3,performing,E73
+Retail,SME,CP_0137,3261000,0.047,0.34,watch,E120
+Corporate,Micro,CP_0121,3820000,0.0487,0.28,performing,E12
+Sovereign,Large Cap,CP_0190,772000,0.0399,0.57,performing,E107
+Retail,Large Cap,CP_0051,1683000,0.0576,0.53,performing,E87
+Retail,SME,CP_0186,3226000,0.0741,0.27,watch,E44
+Corporate,Micro,CP_0140,2467000,0.1376,0.42,performing,E16
+Sovereign,Large Cap,CP_0020,4729000,0.1006,0.51,performing,E60
+Corporate,Micro,CP_0039,95000,0.0764,0.35,performing,E124
+Sovereign,SME,CP_0005,83000,0.0832,0.2,performing,E71
+Sovereign,SME,CP_0005,2536000,0.105,0.37,non_performing,E46
+Corporate,Large Cap,CP_0135,787000,0.0296,0.41,watch,E69
+Retail,Large Cap,CP_0096,4799000,0.0694,0.3,performing,E77
+Sovereign,Large Cap,CP_0168,4959000,0.0978,0.21,performing,E97
+Sovereign,SME,CP_0015,3202000,0.1057,0.23,watch,E85
+Sovereign,Large Cap,CP_0136,4600000,0.0352,0.56,performing,E146
+Retail,SME,CP_0012,4625000,0.103,0.31,performing,E9
+Corporate,SME,CP_0005,4809000,0.0885,0.5,performing,E102
+Corporate,SME,CP_0042,2842000,0.0854,0.54,performing,E139
+Retail,SME,CP_0194,3712000,0.1188,0.48,performing,E89
+Corporate,Large Cap,CP_0112,1199000,0.0123,0.44,performing,E102
+Retail,Large Cap,CP_0163,1403000,0.1489,0.4,performing,E97
+Retail,Large Cap,CP_0175,2950000,0.0576,0.51,performing,E64
+Sovereign,Large Cap,CP_0022,1376000,0.0576,0.51,performing,E100
+Retail,SME,CP_0028,503000,0.1415,0.38,watch,E27
+Corporate,Large Cap,CP_0048,2183000,0.084,0.4,performing,E23
+Retail,Micro,CP_0024,3005000,0.1179,0.55,performing,E106
+Retail,Large Cap,CP_0186,4511000,0.1359,0.59,performing,E44
+Sovereign,SME,CP_0044,737000,0.0459,0.4,performing,E112
+Retail,SME,CP_0077,2447000,0.0125,0.3,performing,E127
+Sovereign,Micro,CP_0051,2316000,0.0212,0.2,performing,E98
+Retail,SME,CP_0086,2182000,0.1237,0.46,performing,E77
+Retail,Micro,CP_0178,1044000,0.0478,0.59,non_performing,E75
+Sovereign,Micro,CP_0163,2480000,0.0868,0.3,performing,E101
+Retail,Large Cap,CP_0145,1039000,0.1496,0.27,watch,E7
+Sovereign,SME,CP_0182,1088000,0.1199,0.53,performing,E105
+Sovereign,SME,CP_0036,3185000,0.0371,0.46,performing,E97
+Corporate,SME,CP_0154,2422000,0.0607,0.4,non_performing,E108
+Sovereign,Large Cap,CP_0093,3523000,0.122,0.44,non_performing,E28
+Corporate,Micro,CP_0171,1807000,0.0974,0.22,non_performing,E103
+Retail,SME,CP_0028,102000,0.0396,0.4,performing,E149
+Sovereign,Micro,CP_0057,2257000,0.0593,0.51,performing,E129
+Corporate,SME,CP_0007,2440000,0.045,0.57,performing,E37
+Retail,SME,CP_0088,2304000,0.0318,0.39,performing,E113
+Sovereign,Micro,CP_0116,1629000,0.0457,0.52,performing,E88
+Sovereign,Large Cap,CP_0174,4010000,0.1396,0.5,performing,E142
+Corporate,SME,CP_0144,2161000,0.0698,0.52,performing,E48
+Sovereign,Micro,CP_0111,2008000,0.1109,0.55,performing,E110
+Retail,Large Cap,CP_0181,1113000,0.0425,0.48,watch,E148
+Corporate,Micro,CP_0048,1861000,0.0304,0.25,performing,E126
+Sovereign,Micro,CP_0081,3005000,0.0921,0.43,performing,E118
+Sovereign,Large Cap,CP_0173,3545000,0.0453,0.45,performing,E35
+Retail,Large Cap,CP_0062,1562000,0.0283,0.48,performing,E108
+Sovereign,Large Cap,CP_0148,1949000,0.0287,0.45,performing,E45
+Sovereign,Large Cap,CP_0126,1480000,0.0289,0.54,performing,E92
+Corporate,SME,CP_0035,1016000,0.0582,0.42,performing,E105
+Sovereign,SME,CP_0107,3565000,0.0671,0.27,performing,E57
+Retail,Large Cap,CP_0071,1163000,0.044,0.51,performing,E127
+Sovereign,Micro,CP_0029,2885000,0.0409,0.42,non_performing,E139
+Corporate,Micro,CP_0113,2754000,0.1485,0.24,watch,E64
+Retail,Large Cap,CP_0116,1351000,0.1295,0.23,watch,E31
+Corporate,Large Cap,CP_0189,2960000,0.0532,0.48,performing,E43
+Sovereign,Large Cap,CP_0053,4077000,0.121,0.43,performing,E138
+Corporate,SME,CP_0181,1499000,0.0863,0.58,performing,E25
+Corporate,SME,CP_0016,4963000,0.1302,0.25,watch,E64
+Corporate,Micro,CP_0083,4151000,0.1145,0.47,performing,E148
+Sovereign,SME,CP_0161,2100000,0.0683,0.45,watch,E24
+Retail,Micro,CP_0192,1427000,0.1405,0.35,non_performing,E84
+Sovereign,Large Cap,CP_0199,4243000,0.0149,0.59,performing,E92
+Corporate,Micro,CP_0102,1128000,0.065,0.28,performing,E73
+Retail,Micro,CP_0148,696000,0.128,0.52,watch,E13
+Corporate,Large Cap,CP_0161,3930000,0.0695,0.25,watch,E113
+Retail,Large Cap,CP_0110,1051000,0.1036,0.25,performing,E41
+Retail,Large Cap,CP_0168,1834000,0.0133,0.47,performing,E14
+Retail,Micro,CP_0079,3644000,0.1135,0.37,performing,E25
+Corporate,Large Cap,CP_0123,436000,0.0895,0.41,performing,E3
+Sovereign,SME,CP_0031,4941000,0.0639,0.25,performing,E99
+Corporate,Micro,CP_0027,561000,0.0558,0.32,performing,E35
+Sovereign,Micro,CP_0037,389000,0.0849,0.44,performing,E90
+Sovereign,Large Cap,CP_0161,3754000,0.1381,0.45,performing,E56
+Corporate,Large Cap,CP_0036,3775000,0.0888,0.35,non_performing,E81
+Corporate,Large Cap,CP_0071,3241000,0.038,0.44,performing,E73
+Sovereign,Large Cap,CP_0169,4385000,0.0316,0.44,performing,E101
+Retail,Micro,CP_0014,3930000,0.1193,0.3,performing,E62
+Retail,Micro,CP_0153,402000,0.1334,0.2,performing,E82
+Corporate,SME,CP_0146,2133000,0.0824,0.27,performing,E19
+Corporate,Micro,CP_0018,118000,0.0331,0.57,non_performing,E102
+Sovereign,SME,CP_0161,3578000,0.1153,0.37,performing,E138
+Sovereign,Micro,CP_0040,1423000,0.0472,0.4,performing,E40
+Sovereign,SME,CP_0101,2953000,0.1147,0.46,performing,E80
+Sovereign,SME,CP_0187,4769000,0.0366,0.3,non_performing,E30
+Retail,Micro,CP_0156,322000,0.1002,0.46,performing,E4
+Sovereign,Large Cap,CP_0180,106000,0.075,0.34,performing,E67
+Corporate,SME,CP_0033,3761000,0.1311,0.49,performing,E8
+Retail,SME,CP_0070,2643000,0.0402,0.59,performing,E128
+Retail,Micro,CP_0093,324000,0.129,0.27,performing,E27
+Sovereign,Micro,CP_0186,621000,0.1114,0.2,watch,E4
+Corporate,Large Cap,CP_0121,1852000,0.1381,0.27,non_performing,E10
+Sovereign,Micro,CP_0190,3296000,0.0345,0.3,non_performing,E82
+Retail,Large Cap,CP_0147,1895000,0.0758,0.56,performing,E133
+Corporate,SME,CP_0018,4391000,0.13,0.51,performing,E23
+Sovereign,SME,CP_0003,1876000,0.0444,0.51,performing,E63
+Retail,SME,CP_0152,4861000,0.1497,0.51,performing,E140
+Corporate,Large Cap,CP_0002,4665000,0.0046,0.42,performing,E3
+Retail,Large Cap,CP_0195,3304000,0.1275,0.49,performing,E136
+Corporate,SME,CP_0126,4808000,0.1459,0.26,performing,E12
+Corporate,Micro,CP_0106,3519000,0.0565,0.59,performing,E25
+Sovereign,Large Cap,CP_0164,4109000,0.0121,0.43,performing,E34
+Corporate,SME,CP_0067,4262000,0.139,0.36,watch,E84
+Retail,SME,CP_0070,1206000,0.1416,0.25,watch,E28
+Corporate,Large Cap,CP_0043,2275000,0.0478,0.25,performing,E54
+Retail,SME,CP_0119,1362000,0.0189,0.26,performing,E11
+Corporate,SME,CP_0038,502000,0.038,0.34,performing,E77
+Retail,Large Cap,CP_0008,4763000,0.1283,0.42,performing,E25
+Retail,Large Cap,CP_0036,651000,0.0102,0.51,performing,E51
+Retail,SME,CP_0176,3170000,0.0971,0.43,performing,E20
+Corporate,Large Cap,CP_0051,4517000,0.0671,0.25,non_performing,E85
+Corporate,Large Cap,CP_0119,301000,0.1387,0.37,performing,E128
+Corporate,SME,CP_0175,2162000,0.0537,0.56,performing,E115
+Corporate,Large Cap,CP_0158,3115000,0.0376,0.32,performing,E141
+Retail,Large Cap,CP_0023,1435000,0.0214,0.28,watch,E135
+Corporate,Micro,CP_0140,3984000,0.1484,0.51,performing,E140
+Retail,SME,CP_0145,2537000,0.0589,0.27,performing,E57
+Corporate,SME,CP_0015,4053000,0.0713,0.34,performing,E60
+Corporate,Large Cap,CP_0064,3301000,0.0407,0.53,non_performing,E15
+Corporate,Micro,CP_0100,1806000,0.126,0.54,performing,E82
+Sovereign,Micro,CP_0092,4574000,0.0052,0.48,non_performing,E145
+Corporate,Micro,CP_0049,4192000,0.1217,0.59,performing,E45
+Retail,Large Cap,CP_0024,328000,0.0906,0.21,performing,E85
+Sovereign,Large Cap,CP_0034,1737000,0.0274,0.52,watch,E16
+Corporate,Large Cap,CP_0151,3538000,0.0221,0.24,performing,E94
+Corporate,SME,CP_0181,4713000,0.0599,0.24,performing,E35
+Corporate,Micro,CP_0112,3970000,0.1441,0.46,performing,E144
+Sovereign,Micro,CP_0092,1155000,0.0888,0.27,performing,E76
+Corporate,Large Cap,CP_0187,59000,0.1056,0.43,watch,E146
+Corporate,Large Cap,CP_0155,1625000,0.1215,0.44,performing,E27
+Retail,Large Cap,CP_0085,3739000,0.0365,0.59,performing,E23
+Sovereign,Micro,CP_0164,3660000,0.051,0.2,performing,E18
+Retail,SME,CP_0028,3616000,0.0082,0.38,performing,E43
+Retail,SME,CP_0097,1789000,0.0569,0.53,watch,E148
+Sovereign,Micro,CP_0058,855000,0.012,0.54,performing,E82
+Retail,Large Cap,CP_0019,1742000,0.1333,0.26,performing,E24
+Retail,Micro,CP_0158,4471000,0.106,0.37,performing,E112
+Corporate,Large Cap,CP_0026,1689000,0.1462,0.36,performing,E139
+Retail,Micro,CP_0073,1522000,0.0153,0.36,performing,E126
+Corporate,Large Cap,CP_0093,69000,0.0141,0.53,performing,E123
+Corporate,Large Cap,CP_0007,1074000,0.0961,0.59,performing,E30
+Retail,SME,CP_0121,2471000,0.0995,0.24,performing,E48
+Retail,SME,CP_0095,974000,0.0076,0.38,performing,E69
+Sovereign,Large Cap,CP_0039,3774000,0.1005,0.23,performing,E139
+Retail,Micro,CP_0059,2790000,0.1263,0.53,performing,E138
+Sovereign,SME,CP_0147,4414000,0.072,0.23,non_performing,E9
+Sovereign,Micro,CP_0133,4012000,0.102,0.45,performing,E115
+Corporate,Large Cap,CP_0055,4052000,0.0198,0.37,non_performing,E112
+Corporate,Micro,CP_0038,4179000,0.0394,0.56,non_performing,E18
+Corporate,SME,CP_0143,2017000,0.0496,0.31,performing,E4
+Sovereign,Micro,CP_0151,2637000,0.0635,0.37,performing,E150
+Corporate,Large Cap,CP_0145,3909000,0.1181,0.55,watch,E106
+Retail,SME,CP_0168,2454000,0.0917,0.21,performing,E37
+Sovereign,Micro,CP_0175,3484000,0.0068,0.56,performing,E61
+Corporate,Micro,CP_0122,4608000,0.1347,0.21,watch,E78
+Retail,SME,CP_0126,4298000,0.103,0.59,performing,E77
+Sovereign,SME,CP_0199,4138000,0.0411,0.37,performing,E49
+Retail,Large Cap,CP_0105,3718000,0.1142,0.55,watch,E132
+Corporate,Large Cap,CP_0080,3562000,0.0611,0.51,performing,E146
+Corporate,Large Cap,CP_0050,4382000,0.0309,0.22,performing,E13
+Retail,Micro,CP_0051,1406000,0.1237,0.4,performing,E32
+Sovereign,Large Cap,CP_0062,1894000,0.0895,0.27,watch,E142
+Retail,SME,CP_0042,4196000,0.0395,0.53,performing,E8
+Retail,Large Cap,CP_0042,4276000,0.1172,0.29,performing,E58
+Sovereign,Large Cap,CP_0069,3275000,0.0775,0.55,non_performing,E3
+Retail,Large Cap,CP_0166,907000,0.1203,0.29,performing,E79
+Sovereign,Micro,CP_0165,1413000,0.1344,0.54,performing,E56
+Retail,SME,CP_0174,2627000,0.0939,0.43,performing,E96
+Sovereign,Micro,CP_0153,3065000,0.0455,0.24,performing,E71
+Sovereign,SME,CP_0071,1343000,0.107,0.56,performing,E39
+Sovereign,Large Cap,CP_0015,4037000,0.1206,0.44,performing,E36
+Sovereign,Large Cap,CP_0168,2512000,0.045,0.56,performing,E10
+Sovereign,Micro,CP_0147,4089000,0.0521,0.49,performing,E122
+Sovereign,SME,CP_0130,1536000,0.0263,0.46,performing,E76
+Corporate,SME,CP_0033,3718000,0.1091,0.42,non_performing,E86
+Sovereign,Large Cap,CP_0057,1809000,0.1119,0.32,watch,E85
+Retail,SME,CP_0150,1506000,0.1278,0.39,watch,E150
+Sovereign,Micro,CP_0019,2387000,0.03,0.25,performing,E136
+Retail,SME,CP_0014,4361000,0.0235,0.6,performing,E146
+Retail,Large Cap,CP_0081,4319000,0.0279,0.23,performing,E46
+Retail,Micro,CP_0015,73000,0.0418,0.5,performing,E41
+Retail,Large Cap,CP_0034,3092000,0.0954,0.36,non_performing,E99
+Corporate,Large Cap,CP_0137,1037000,0.0566,0.21,performing,E136
+Corporate,Large Cap,CP_0174,70000,0.1103,0.29,watch,E80
+Corporate,Large Cap,CP_0099,2542000,0.0466,0.23,performing,E75
+Retail,Micro,CP_0134,3002000,0.0513,0.56,non_performing,E88
+Retail,SME,CP_0193,983000,0.1423,0.57,performing,E59
+Corporate,Micro,CP_0034,1095000,0.0043,0.4,performing,E10
+Retail,Micro,CP_0066,3868000,0.0938,0.44,performing,E28
+Sovereign,Large Cap,CP_0013,3464000,0.0631,0.35,performing,E122
+Sovereign,Large Cap,CP_0053,3491000,0.0949,0.32,performing,E134
+Retail,Micro,CP_0156,3519000,0.0634,0.56,performing,E31

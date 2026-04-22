@@ -1,0 +1,135 @@
+---
+title: "Getting Started with volvelle"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started with volvelle}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment  = "#>"
+)
+library(volvelle)
+```
+
+## Overview
+
+**volvelle** provides a config-driven ROLLUP aggregation framework with an embeddable HTML drill-down widget. The name references the medieval rotating paper calculation instrument — nested analytical layers, each a distinct _face_ or facet of the data.
+
+The core workflow is:
+
+1. Supply a data frame and a YAML config file
+2. `volvelle()` returns a structured list of ROLLUP-aggregated data frames — one per filter facet plus one unfiltered (`"full"`)
+3. `volvelle_widget()` wraps the result in a self-contained interactive HTML widget
+
+## The Demo Dataset
+
+The package ships with `credit_portfolio`, a synthetic dataset of 500 credit exposures:
+
+```{r}
+head(credit_portfolio)
+str(credit_portfolio)
+```
+
+## The Config File
+
+The demo config at `inst/extdata/demo_config.yaml` declares:
+
+- **Hierarchy**: `segment → sub_segment → counterparty`
+- **Measures**: total exposure (sum), weighted-average PD and LGD, distinct obligor count
+- **Derived field**: expected loss (post-aggregation product)
+- **Filters**: performing, non-performing, large exposure
+
+```{r}
+cfg_path <- system.file("extdata", "demo_config.yaml", package = "volvelle")
+cfg      <- parse_config(cfg_path)
+cat(yaml::as.yaml(cfg))
+```
+
+## Running volvelle()
+
+```{r}
+result <- volvelle(credit_portfolio, cfg_path)
+print(result)
+```
+
+The result is a named list of `data.table` objects, one per facet. The `"full"` facet always contains the unfiltered ROLLUP:
+
+```{r}
+# Show first 20 rows of the full facet
+head(result$full, 20)
+```
+
+Metadata columns:
+
+- `.id`: grouping-set index (1 = finest, N+1 = grand total)
+- `.rollup_depth`: 0 = grand total, `length(hierarchy)` = leaf level
+
+### Grand Total Row
+
+```{r}
+grand <- result$full[result$full$.rollup_depth == 0L, ]
+grand[, c("exposure", "n_obligors", "expected_loss")]
+```
+
+## Interactive Widget
+
+### Light Theme
+
+```{r, out.width = "100%"}
+volvelle_widget(result, title = "Credit Portfolio ROLLUP", theme = "light")
+```
+
+### Dark Theme
+
+```{r, out.width = "100%"}
+volvelle_widget(result, title = "Credit Portfolio ROLLUP", theme = "dark")
+```
+
+## Accessing a Single Facet
+
+You can extract any facet as a plain `data.frame` for downstream use:
+
+```{r}
+# Extract the 'performing' facet
+performing_df <- as.data.frame(result, facet = "performing")
+class(performing_df)
+nrow(performing_df)
+
+# Leaf-level rows only (finest granularity)
+leaf <- performing_df[performing_df$.rollup_depth == max(performing_df$.rollup_depth), ]
+head(leaf[, c("segment", "sub_segment", "counterparty", "exposure", "avg_pd")])
+```
+
+## Custom Filters (Programmatic Injection)
+
+You can inject filters at call time via `extra_filters`, without modifying the config file. The filter structure mirrors the YAML `filters` block:
+
+```{r}
+extra <- list(
+  watch_only = list(col = "status", op = "==", val = "watch")
+)
+
+result2 <- volvelle(credit_portfolio, cfg_path, extra_filters = extra)
+facets(result2)
+```
+
+Alternatively, pre-filter the data manually before calling `volvelle()`:
+
+```{r}
+sovereign_data <- credit_portfolio[credit_portfolio$segment == "Sovereign", ]
+result_sov     <- volvelle(sovereign_data, cfg_path)
+print(result_sov)
+```
+
+## Saving the Widget to HTML
+
+```{r, eval = FALSE}
+w <- volvelle_widget(result, title = "Credit Portfolio")
+htmlwidgets::saveWidget(w, "portfolio_report.html", selfcontained = TRUE)
+```
+
+The resulting `.html` file is fully self-contained and requires no external dependencies to view.
