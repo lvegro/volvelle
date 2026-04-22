@@ -3,7 +3,7 @@
 \alias{credit_portfolio}
 \title{Synthetic credit portfolio dataset}
 \format{
-A data frame with 500 rows and 8 variables:
+A data frame with 500 rows and 9 variables:
 \describe{
   \item{segment}{Broad portfolio segment: \code{"Corporate"}, \code{"Retail"}, or \code{"Sovereign"}.}
   \item{sub_segment}{Finer segment classification: \code{"Large Cap"}, \code{"SME"}, or \code{"Micro"}.}
@@ -13,6 +13,7 @@ A data frame with 500 rows and 8 variables:
   \item{lgd}{Loss given default. Range 0.20–0.60.}
   \item{status}{Loan performance status: \code{"performing"} (75\%), \code{"watch"} (15\%), or \code{"non_performing"} (10\%).}
   \item{entity_id}{Legal entity identifier, e.g. \code{"E042"}.}
+  \item{period}{Reporting period: \code{"Q1-2024"} or \code{"Q2-2024"}. Used for time-comparison examples.}
 }
 }
 \source{

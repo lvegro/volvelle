@@ -67,6 +67,17 @@
     }
   }
 
+  # Check time_var column
+  if (!is.null(config$time_var)) {
+    tv_col <- config$time_var$col
+    if (!tv_col %in% names(dt)) {
+      rlang::abort(
+        sprintf("time_var col '%s' is missing from data.", tv_col),
+        class = "volvelle_data_error"
+      )
+    }
+  }
+
   invisible(TRUE)
 }
 

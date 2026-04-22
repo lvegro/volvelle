@@ -64,6 +64,7 @@ validate_config <- function(raw) {
   }
 
   .check_measure_semantics(raw$measures)
+  .check_time_var_semantics(raw)
 
   invisible(raw)
 }
@@ -73,11 +74,16 @@ validate_config <- function(raw) {
 # ---------------------------------------------------------------------------
 
 .normalise_config <- function(raw) {
+  tv <- raw$time_var
+  if (!is.null(tv) && !is.null(tv$periods)) {
+    tv$periods <- unlist(tv$periods)
+  }
   list(
     hierarchy = unlist(raw$hierarchy),   # YAML list -> character vector
     measures  = raw$measures,
-    derived   = raw$derived %||% NULL,
-    filters   = raw$filters %||% NULL
+    derived   = raw$derived  %||% NULL,
+    filters   = raw$filters  %||% NULL,
+    time_var  = tv           %||% NULL
   )
 }
 
@@ -103,6 +109,34 @@ validate_config <- function(raw) {
         class = "volvelle_config_error"
       )
     }
+  }
+
+  invisible(NULL)
+}
+
+.check_time_var_semantics <- function(raw) {
+  tv <- raw$time_var
+  if (is.null(tv)) return(invisible(NULL))
+
+  hierarchy <- unlist(raw$hierarchy)
+
+  if (tv$col %in% hierarchy) {
+    rlang::abort(
+      sprintf(
+        "time_var col '%s' must not appear in the hierarchy (it is never rolled up).",
+        tv$col
+      ),
+      class = "volvelle_config_error"
+    )
+  }
+
+  measure_names <- names(raw$measures)
+  derived_names <- names(raw$derived)
+  if (tv$col %in% c(measure_names, derived_names)) {
+    rlang::abort(
+      sprintf("time_var col '%s' clashes with a measure or derived field name.", tv$col),
+      class = "volvelle_config_error"
+    )
   }
 
   invisible(NULL)

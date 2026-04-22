@@ -38,6 +38,9 @@
       "additionalProperties": {
         "$ref": "#/definitions/filter"
       }
+    },
+    "time_var": {
+      "$ref": "#/definitions/time_var"
     }
   },
   "definitions": {
@@ -116,6 +119,29 @@
         },
         "val": {
           "description": "Value(s) to compare against; array for %in%, scalar otherwise"
+        }
+      }
+    },
+    "time_var": {
+      "type": "object",
+      "description": "Declares a time/period dimension for side-by-side comparison. The column is included in every ROLLUP grouping set (never aggregated over). After aggregation the result is pivoted wide so each period becomes its own column group.",
+      "required": ["col"],
+      "additionalProperties": false,
+      "properties": {
+        "col": {
+          "type": "string",
+          "description": "Name of the column containing period labels (e.g. 'quarter', 'year').",
+          "minLength": 1
+        },
+        "periods": {
+          "type": "array",
+          "description": "Explicit ordered list of period values. Controls column order in the wide output. Periods absent from the data are silently ignored. If omitted, all unique values are used in ascending sort order.",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "derived_deltas": {
+          "type": "boolean",
+          "description": "When true and exactly two periods are present, append a '<measure>_delta' column (period2 - period1) for every measure and derived field. Default false."
         }
       }
     }

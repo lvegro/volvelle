@@ -51,14 +51,12 @@ volvelle_widget <- function(x, title = NULL, height = "600px", theme = "light") 
   hierarchy <- cfg$hierarchy
   measures  <- cfg$measures
   derived   <- cfg$derived
+  timed     <- !is.null(cfg$time_var)
 
-  # Convert to data.frame for reactable
   df <- as.data.frame(dt)
 
-  # Build column definitions
+  # ── Shared: hierarchy column definitions ──────────────────────────────────
   col_defs <- list()
-
-  # Hierarchy columns — left-aligned, styled by depth
   for (col in hierarchy) {
     col_defs[[col]] <- reactable::colDef(
       name  = col,
@@ -66,58 +64,120 @@ volvelle_widget <- function(x, title = NULL, height = "600px", theme = "light") 
       style = reactable::JS(
         "function(rowInfo) {
           var depth = rowInfo.values['.rollup_depth'];
-          var weight = depth >= 2 ? 'bold' : (depth === 1 ? '600' : 'normal');
-          var size   = depth >= 2 ? '1em' : (depth === 1 ? '0.95em' : '0.9em');
-          return { fontWeight: weight, fontSize: size };
+          if (depth === 0) return { fontWeight: 'bold' };
+          if (depth === 1) return { fontWeight: '700', paddingLeft: '0.5rem' };
+          if (depth === 2) return { fontWeight: '600', paddingLeft: '1.5rem' };
+          return { paddingLeft: (depth * 0.8) + 'rem' };
         }"
       )
     )
   }
 
-  # Measure columns — right-aligned with thousand separators
-  for (nm in names(measures)) {
-    m     <- measures[[nm]]
-    label <- .field_label(m, nm)
+  # ── Branch: time-aware (wide) vs. flat column definitions ─────────────────
+  col_groups <- NULL   # reactable columnGroups, populated in timed path
 
-    col_defs[[nm]] <- reactable::colDef(
-      name   = label,
-      align  = "right",
-      format = reactable::colFormat(separators = TRUE, digits = 4)
-    )
-  }
+  if (timed) {
+    periods    <- attr(dt, "periods")
+    value_cols <- attr(dt, "value_cols")
+    all_fields <- c(as.list(measures), as.list(derived %||% list()))
 
-  # Derived field columns
-  if (!is.null(derived)) {
-    for (nm in names(derived)) {
-      d     <- derived[[nm]]
-      label <- .field_label(d, nm)
-      fmt   <- d$format %||% "%.2f"
+    col_groups <- list()
 
+    for (p in periods) {
+      group_col_nms <- character(0)
+
+      for (vc in value_cols) {
+        col_nm <- paste0(vc, "_", p)
+        if (!col_nm %in% names(df)) next
+        label          <- .field_label(all_fields[[vc]], vc)
+        col_defs[[col_nm]] <- reactable::colDef(
+          name   = label,
+          align  = "right",
+          format = reactable::colFormat(separators = TRUE, digits = 4)
+        )
+        group_col_nms <- c(group_col_nms, col_nm)
+      }
+
+      if (length(group_col_nms) > 0L) {
+        col_groups <- c(col_groups, list(
+          reactable::colGroup(name = as.character(p), columns = group_col_nms)
+        ))
+      }
+    }
+
+    # Delta columns (if present)
+    if (isTRUE(cfg$time_var$derived_deltas)) {
+      delta_col_nms <- character(0)
+
+      for (vc in value_cols) {
+        delta_nm <- paste0(vc, "_delta")
+        if (!delta_nm %in% names(df)) next
+        label <- paste0(.field_label(all_fields[[vc]], vc), " Δ")
+
+        # JS style: green for positive, red for negative
+        delta_style <- reactable::JS(sprintf(
+          "function(rowInfo) {
+             var v = rowInfo.values['%s'];
+             if (v == null) return {};
+             return { color: v > 0 ? '#22c55e' : v < 0 ? '#ef4444' : 'inherit',
+                      fontWeight: '600' };
+           }",
+          delta_nm
+        ))
+
+        col_defs[[delta_nm]] <- reactable::colDef(
+          name   = label,
+          align  = "right",
+          style  = delta_style,
+          format = reactable::colFormat(separators = TRUE, digits = 4)
+        )
+        delta_col_nms <- c(delta_col_nms, delta_nm)
+      }
+
+      if (length(delta_col_nms) > 0L) {
+        col_groups <- c(col_groups, list(
+          reactable::colGroup(name = "Δ", columns = delta_col_nms)
+        ))
+      }
+    }
+
+  } else {
+    # ── Flat (no time_var) column definitions ──────────────────────────────
+
+    for (nm in names(measures)) {
       col_defs[[nm]] <- reactable::colDef(
-        name   = label,
+        name   = .field_label(measures[[nm]], nm),
         align  = "right",
-        format = reactable::colFormat(separators = TRUE)
+        format = reactable::colFormat(separators = TRUE, digits = 4)
       )
+    }
+
+    if (!is.null(derived)) {
+      for (nm in names(derived)) {
+        col_defs[[nm]] <- reactable::colDef(
+          name   = .field_label(derived[[nm]], nm),
+          align  = "right",
+          format = reactable::colFormat(separators = TRUE)
+        )
+      }
     }
   }
 
-  # Hide metadata columns
+  # Always hide metadata columns
   col_defs[[".id"]]           <- reactable::colDef(show = FALSE)
   col_defs[[".rollup_depth"]] <- reactable::colDef(show = FALSE)
 
-  # Sort: grand total (depth=0) first, then ascending depth (coarser before finer),
-  # then by hierarchy columns for stable ordering within each level.
+  # Sort: grand total first, then ascending depth, then by hierarchy for stability
   sort_keys <- c(list(df$.rollup_depth), lapply(hierarchy, function(h) df[[h]]))
   df        <- df[do.call(order, sort_keys), ]
 
-  # Theme-specific colours
+  # ── Theme ──────────────────────────────────────────────────────────────────
   bg_colour  <- if (theme == "dark") "#1e1e2e" else "#ffffff"
   txt_colour <- if (theme == "dark") "#cdd6f4" else "#1a1a2e"
   hdr_bg     <- if (theme == "dark") "#313244" else "#f0f4f8"
   stripe_bg  <- if (theme == "dark") "#252535" else "#f8fafc"
   border_col <- if (theme == "dark") "#45475a" else "#e2e8f0"
 
-  # Row styling based on .rollup_depth for visual hierarchy
   row_style <- reactable::JS(
     "function(rowInfo) {
       var d = rowInfo.values['.rollup_depth'];
@@ -131,6 +191,7 @@ volvelle_widget <- function(x, title = NULL, height = "600px", theme = "light") 
   reactable::reactable(
     df,
     columns             = col_defs,
+    columnGroups        = col_groups,
     rowStyle            = row_style,
     sortable            = TRUE,
     resizable           = TRUE,

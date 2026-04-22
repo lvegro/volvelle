@@ -5,7 +5,7 @@
 #' `set.seed(42)` for reproducibility. Used in package examples and the
 #' demo vignette.
 #'
-#' @format A data frame with 500 rows and 8 variables:
+#' @format A data frame with 500 rows and 9 variables:
 #' \describe{
 #'   \item{segment}{Broad portfolio segment: `"Corporate"`, `"Retail"`, or `"Sovereign"`.}
 #'   \item{sub_segment}{Finer segment classification: `"Large Cap"`, `"SME"`, or `"Micro"`.}
@@ -15,6 +15,7 @@
 #'   \item{lgd}{Loss given default. Range 0.20–0.60.}
 #'   \item{status}{Loan performance status: `"performing"` (75 %), `"watch"` (15 %), or `"non_performing"` (10 %).}
 #'   \item{entity_id}{Legal entity identifier, e.g. `"E042"`.}
+#'   \item{period}{Reporting period: `"Q1-2024"` or `"Q2-2024"`. Used for time-comparison examples.}
 #' }
 #' @source Generated synthetically via `data-raw/make_demo_data.R`.
 "credit_portfolio"

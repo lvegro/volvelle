@@ -1,0 +1,54 @@
+hierarchy:
+  - segment
+  - sub_segment
+  - counterparty
+
+measures:
+  exposure:
+    col: nominal_exposure
+    fn: sum
+    label: "Total Exposure"
+
+  avg_pd:
+    col: pd
+    fn: weighted_mean
+    weight: nominal_exposure
+    label: "Weighted Avg PD"
+
+  avg_lgd:
+    col: lgd
+    fn: weighted_mean
+    weight: nominal_exposure
+    label: "Weighted Avg LGD"
+
+  n_obligors:
+    col: entity_id
+    fn: n_distinct
+    label: "# Obligors"
+
+derived:
+  expected_loss:
+    expr: "avg_pd * avg_lgd * exposure"
+    label: "Expected Loss"
+    format: "%.0f"
+
+# time_var: the period column is pinned into every ROLLUP grouping set
+# (never aggregated over). After aggregation the result is pivoted wide:
+# one column group per period, plus optional delta columns.
+time_var:
+  col: period
+  periods:
+    - Q1-2024
+    - Q2-2024
+  derived_deltas: true
+
+filters:
+  performing:
+    col: status
+    op: "=="
+    val: "performing"
+
+  non_performing:
+    col: status
+    op: "=="
+    val: "non_performing"

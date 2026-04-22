@@ -90,14 +90,21 @@
 #' @return A named list of ROLLUP-aggregated `data.table` objects.
 #' @keywords internal
 .build_all_facets <- function(dt, config) {
-  filters <- config$filters
+  filters  <- config$filters
+  timed    <- !is.null(config$time_var)
+
+  .rollup_and_pivot <- function(data) {
+    res <- .build_rollup(data, config)
+    if (timed) res <- .pivot_time(res, config)
+    res
+  }
 
   # Full facet (no pre-filter)
-  result <- list(full = .build_rollup(dt, config))
+  result <- list(full = .rollup_and_pivot(dt))
 
   if (!is.null(filters) && length(filters) > 0L) {
     for (nm in names(filters)) {
-      f   <- filters[[nm]]
+      f    <- filters[[nm]]
       keep <- .eval_filter(dt, f)
       sub  <- dt[keep]
 
@@ -108,7 +115,7 @@
         )
       }
 
-      result[[nm]] <- .build_rollup(sub, config)
+      result[[nm]] <- .rollup_and_pivot(sub)
     }
   }
 
