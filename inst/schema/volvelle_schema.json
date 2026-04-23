@@ -1,6 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/lvegro/volvelle/volvelle_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Volvelle Configuration Schema",
   "description": "Schema for volvelle YAML configuration files",
   "type": "object",
@@ -72,14 +71,6 @@
           "type": "string",
           "description": "sprintf format string for display"
         }
-      },
-      "if": {
-        "properties": {
-          "fn": { "const": "weighted_mean" }
-        }
-      },
-      "then": {
-        "required": ["weight"]
       }
     },
     "derived_field": {

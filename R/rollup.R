@@ -133,7 +133,10 @@ utils::globalVariables(c(".id", ".rollup_depth", ".", "J", ".N"))
 
   # .rollup_depth: 0 = grand total, length(hierarchy) = finest/leaf.
   # The time column doesn't count as a hierarchy level.
-  result[, .rollup_depth := (length(hierarchy) + 1L) - .id]
+  # Extract .id to a plain variable first — dot-prefixed names are ambiguous
+  # inside data.table's j NSE and may not resolve as column references.
+  id_vec <- result[[".id"]]
+  result[, .rollup_depth := (length(hierarchy) + 1L) - id_vec]
 
   if (!is.null(derived)) {
     result <- .apply_derived(result, derived)
